@@ -1,6 +1,6 @@
 // Loading animation
 const shimmer =
-  'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent';
+  "before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent";
 
 export function CardSkeleton() {
   return (
@@ -209,6 +209,61 @@ export function InvoicesTableSkeleton() {
               <TableRowSkeleton />
               <TableRowSkeleton />
               <TableRowSkeleton />
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function CustomersTableSkeleton() {
+  return (
+    <div className="mt-6 flow-root">
+      <div className="inline-block min-w-full align-middle">
+        <div className="rounded-lg bg-gray-50 p-2 md:pt-0">
+          <div className="md:hidden">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <div key={i} className="mb-2 w-full rounded-md bg-white p-4">
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-full bg-gray-200 animate-pulse" />
+                  <div className="flex-1">
+                    <div className="h-5 w-32 rounded bg-gray-200 animate-pulse mb-2" />
+                    <div className="h-4 w-48 rounded bg-gray-200 animate-pulse" />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <table className="hidden min-w-full text-gray-900 md:table">
+            <thead className="rounded-lg text-left text-sm font-normal">
+              <tr>
+                <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
+                  Customer
+                </th>
+                <th scope="col" className="px-3 py-5 font-medium">
+                  Email
+                </th>
+              </tr>
+            </thead>
+            <tbody className="bg-white">
+              {[1, 2, 3, 4, 5, 6].map((i) => (
+                <tr
+                  key={i}
+                  className="w-full border-b border-gray-100 last-of-type:border-none"
+                >
+                  <td className="whitespace-nowrap py-5 pl-4 pr-3 sm:pl-6">
+                    <div className="flex items-center gap-3">
+                      <div className="h-8 w-8 rounded-full bg-gray-200 animate-pulse" />
+                      <div className="h-5 w-32 rounded bg-gray-200 animate-pulse" />
+                    </div>
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-5">
+                    <div className="h-5 w-48 rounded bg-gray-200 animate-pulse" />
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

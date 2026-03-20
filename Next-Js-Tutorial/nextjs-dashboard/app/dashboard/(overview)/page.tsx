@@ -10,6 +10,12 @@ import {
   CardsSkeleton,
 } from "@/app/ui/skeletons";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Overview | Acme Dashboard",
+};
+
 export default async function Page() {
   const {
     numberOfInvoices,
