@@ -1,0 +1,60 @@
+{
+  "highlights": [
+    {
+      "id": 1,
+      "name": "Handwoven Cotton Scarf",
+      "artisan": "Maria Lopez",
+      "category": "Textiles",
+      "price": 25.99,
+      "currency": "USD",
+      "rating": 4.8,
+      "reviews": 34,
+      "image": "/products/hg1.webp",
+      "isFeatured": true,
+      "description": "A soft, handwoven cotton scarf made using traditional techniques.",
+      "location": "Guatemala"
+    },
+    {
+      "id": 2,
+      "name": "Ceramic Coffee Mug",
+      "artisan": "John Carter",
+      "category": "Pottery",
+      "price": 18.5,
+      "currency": "USD",
+      "rating": 4.6,
+      "reviews": 21,
+      "image": "/products/hg2.webp",
+      "isFeatured": true,
+      "description": "Handcrafted ceramic mug with a rustic glaze finish.",
+      "location": "USA"
+    },
+    {
+      "id": 3,
+      "name": "Leather Journal",
+      "artisan": "Aisha Khan",
+      "category": "Stationery",
+      "price": 32.0,
+      "currency": "USD",
+      "rating": 4.9,
+      "reviews": 12,
+      "image": "/products/hg3.webp",
+      "isFeatured": true,
+      "description": "Premium handmade leather journal with recycled paper pages.",
+      "location": "Morocco"
+    },
+    {
+      "id": 4,
+      "name": "Beaded Bracelet",
+      "artisan": "Carlos Mendez",
+      "category": "Jewelry",
+      "price": 12.75,
+      "currency": "USD",
+      "rating": 4.5,
+      "reviews": 18,
+      "image": "/products/hg4.webp",
+      "isFeatured": false,
+      "description": "Colorful handmade bracelet crafted with glass beads.",
+      "location": "Mexico"
+    }
+  ]
+}
